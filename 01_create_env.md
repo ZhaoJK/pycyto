@@ -11,11 +11,13 @@
 3. step 3 _ activate conda environemnt
 	+ activate env "pycyto": conda activate pycyto
 	+ install library within your environment with commands: "conda(or mamba ) install 'your lib or pkg name'", like 
-		conda install -c conda-forge jupyterlab (install jupyterlab from "conda-forge", "conda-forge" is a conda repository)
-		conda install -c conda-forge spyder
-		conda install -c conda-forge pip
-	  or install batchly, conda install -c conda-forge jupyterlab, spyder, pip
-	+ install lib from pipy, "pip install Pytometry", bacause Pytometry published in pipy ang github but not in conda repo
+		mamba install -c conda-forge jupyterlab (install jupyterlab from "conda-forge", "conda-forge" is a conda repository)
+		mamba install -c conda-forge spyder
+		mamba install -c conda-forge pip
+	  or install batchly, 
+	  	mamba install -c conda-forge jupyterlab, spyder, pip
+	+ install libs from pipy, bacause Pytometry published in pipy ang github but not in conda repo
+		pip install Pytometry"
 
 4. step 4 _ modify jupyter configure
 	+ jupyter notebook --generate-config
