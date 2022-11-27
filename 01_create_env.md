@@ -15,9 +15,9 @@
 		+ mamba install -c conda-forge spyder 
 		+ mamba install -c conda-forge pip 
 	 + or install batchly,  
-	  	mamba install -c conda-forge jupyterlab, spyder, pip 
+	  	+mamba install -c conda-forge jupyterlab, spyder, pip 
 	+ install libs from pipy, bacause Pytometry published in pipy ang github but not in conda repo 
-		pip install Pytometry 
+		+ pip install Pytometry 
  
 4. step 4 _ modify jupyter configure 
 	+ jupyter notebook --generate-config
