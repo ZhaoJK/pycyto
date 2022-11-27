@@ -6,11 +6,12 @@
 2. step 2 _ create conda environment with a name you like, for example "pycyto" 
 	+ how to use conda ref: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html 
 	+ run "powershell prompt (anaconda3)" 
-	+ run command: "conda create --name pycyto python mamba", it will create a environment named "pycyto" and install python, mamba (mamba is a tool same as conda but faster than conda when install libs or pkgs from conda repository) 
+	+ run command: "conda create -n pycyto python", it will create a environment named "pycyto" and install python, mamba (mamba is a tool same as conda but faster than conda when install libs or pkgs from conda repository) 
  
 3. step 3 _ activate conda environemnt 
 	+ activate env "pycyto": conda activate pycyto 
 	+ install library within your environment with commands: "conda(or mamba ) install 'your lib or pkg name'", like  
+		+ conda install -c conda-forge mamba
 		+ mamba install -c conda-forge jupyterlab (install jupyterlab from "conda-forge", "conda-forge" is a conda repository) 
 		+ mamba install -c conda-forge spyder 
 		+ mamba install -c conda-forge pip 
