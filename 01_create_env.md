@@ -20,8 +20,8 @@
 	+ install libs from pipy, bacause Pytometry published in pipy ang github but not in conda repo 
 		+ pip install Pytometry 
  
-4. step 4 _ modify jupyter configure 
-	+ jupyter notebook --generate-config
+4. step 4 _ modify jupyter configure
+	+ in cmd run, jupyter notebook --generate-config
 	+ find configure files in C:\Users\username\.jupyter\jupyter_notebook_config.py 
-	+ edit #c.NotebookApp.notebook_dir = '' >> c.NotebookApp.notebook_dir = 'path to your folder'  
-	+ run jupyterlab by typing "jupyterlab" 
+	+ edit #c.NotebookApp.notebook_dir = '' >> c.NotebookApp.notebook_dir = 'path to your folder', like "F:\\"
+	+ run jupyterlab by typing "jupyter lab" 
