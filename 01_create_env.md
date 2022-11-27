@@ -11,9 +11,9 @@
 3. step 3 _ activate conda environemnt 
 	+ activate env "pycyto": conda activate pycyto 
 	+ install library within your environment with commands: "conda(or mamba ) install 'your lib or pkg name'", like  
-		mamba install -c conda-forge jupyterlab (install jupyterlab from "conda-forge", "conda-forge" is a conda repository) 
-		mamba install -c conda-forge spyder 
-		mamba install -c conda-forge pip 
+		+ mamba install -c conda-forge jupyterlab (install jupyterlab from "conda-forge", "conda-forge" is a conda repository) 
+		+ mamba install -c conda-forge spyder 
+		+ mamba install -c conda-forge pip 
 	  or install batchly,  
 	  	mamba install -c conda-forge jupyterlab, spyder, pip 
 	+ install libs from pipy, bacause Pytometry published in pipy ang github but not in conda repo 
