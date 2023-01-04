@@ -1,10 +1,22 @@
-pip install -U matplotlib
+# 2 Working with matplotlib ineractively
 
-conda install -c conda-forge ipympl nodejs
-jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
-jupyter lab build
+## matplotlib draw graph interactively need nodejs, ipympl and jupyter-extionsion
+Ref ipympl (github)[https://github.com/matplotlib/ipympl]
 
-%matplotlib notebook
+
+1. install matplotlib stable version
+    pip install -U matplotlib
+2. install nodejs and ipympl
+    conda install -c conda-forge ipympl nodejs
+3. install jupyter extension - widgets and matplotlib, then re-build jupyter lab
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+    jupyter lab build
+
+## Now, magic %matplotlib should work
+run fellowing code in jupyter lab
+
+*****************
+%matplotlib ipympl
 
 import matplotlib.pyplot as plt
 
@@ -25,3 +37,5 @@ def onclick(event):
 fig, ax = plt.subplots()
 fig.canvas.mpl_connect('button_press_event', onclick)
 plt.show()
+
+********
