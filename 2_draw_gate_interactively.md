@@ -2,7 +2,7 @@
 
 ## matplotlib draw graph interactively need nodejs, ipympl and jupyter-extionsion
 Ref ipympl (github)[https://github.com/matplotlib/ipympl]
-
+Ref [matplotlib interaction tutorial](https://matplotlib.org/stable/tutorials/index.html)
 
 1. install matplotlib stable version
     pip install -U matplotlib
