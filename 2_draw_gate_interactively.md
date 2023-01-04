@@ -7,8 +7,8 @@ Ref [matplotlib interaction tutorial](https://matplotlib.org/stable/tutorials/in
 Open powershell in Windows
 1. define alias: "new-alias grep findstr", "grep" means "findstr" in fellowing cmd.  
  
-2. In base env, we update nodejs by "conda install nodejs".
-    nodejs version should be greater than 16 when you check with "conda list | gret nodejs"  
+2. In base env, we update nodejs by "conda install -c conda-forge nodejs".
+    nodejs version should be greater than 16 when you check with "conda list | grep nodejs"  
      
 3. I prefer python version is 3.9, if not, "conda update -n pycyto python==3.9"  
  
