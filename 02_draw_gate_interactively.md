@@ -22,6 +22,12 @@ Open powershell in Windows
     + update numba, "pip install --upgrade numba" 
     + install scanpy, "pip install scanpy" 
  
+8. Create multi-kernel for jupyter, optional.
+    + pip install ipykernel
+    + python -m ipykernel install --user --name=pycyto
+    + conda install Jupyter
+    + jupyter kernelspec list
+    
 8. Run jupyter lab, test fellowing code 
  
 ## Now, magic %matplotlib should work  
