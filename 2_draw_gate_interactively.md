@@ -9,28 +9,25 @@ Open powershell in Windows
  
 2. In base env, we update nodejs by "conda install -c conda-forge nodejs".
     nodejs version should be greater than 16 when you check with "conda list | grep nodejs"  
-     
-3. I prefer python version is 3.9, if not, "conda update -n pycyto python==3.9"  
  
-4. Activate env "pycyto", "conda activate pycyto".  
+3. Activate env "pycyto", "conda activate pycyto".  
  
-5. We confirm matplotlib version 3.6.2. otherwise "conda install matplotlib==3.6.2" 
+4. We confirm matplotlib version 3.6.2. otherwise "conda install -c conda-forge matplotlib==3.6.2 nodejs" 
  
-6. Update nodejs again in current env, "conda install nodejs" 
+5. Install jupyter again, "conda install jupyterlab ipympl ipywidgets"  
  
-7. Install jupyter again, "conda install jupyterlab ipympl ipywidgets"  
- 
-8. install Jupyter extension, "jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib" 
- 
-9. jupyter lab build, then jupyter lab e:\ 
+6. install Jupyter extension, "jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib" 
 
-
-## Now, magic %matplotlib should work 
-run fellowing code in jupyter lab 
-
-***************** 
+7. In case of error when import scanpy, run-install numba and scanpy 
+    + update numba, "pip install --upgrade numba" 
+    + install scanpy, "pip install scanpy" 
+ 
+8. Run jupyter lab, test fellowing code 
+ 
+## Now, magic %matplotlib should work  
+*****************  
 %matplotlib ipympl 
- 
+  
 import matplotlib.pyplot as plt 
  
 def draw_polygon(points): 
