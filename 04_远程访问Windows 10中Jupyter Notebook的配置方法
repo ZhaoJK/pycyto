@@ -1,0 +1,58 @@
+[Original page](https://www.bilibili.com/read/cv9010361)
+
+1.在安装好的Jupyter Notebook和相关机器学习环境的Windows 10电脑中打开Anaconda Prompt，输入jupyter notebook --generate-config生成配置文件，并记录路径。
+
+
+
+
+2.继续在Anaconda Prompt中输入ipython，然后输入from notebook.auth import passwd，最后输入passwd()，设置密码，然后复制输出生成的密钥文件。
+
+
+
+
+3.从第一步记录的路径找到配置文件，使用记事本打开配置文件。
+
+
+
+
+4.在配置文件中添加以下命令，并设置访问端口和拷贝生成的密钥。
+
+c.NotebookApp.ip = '*'                                     #设置远程所有ip可访问
+
+c.NotebookApp.open_browser = False            #关闭浏览器
+
+c.NotebookApp.password=u'密钥'                   #输入上面生成的密钥
+
+c.NotebookApp.port = 8888                             #设置SSH访问的端口
+
+c.NotebookApp.allow_remote_access = True  #允许远程连接
+
+
+
+
+5.在windows 10系统中找到设置—应用和功能—选择可选功能，安装SSH服务。
+
+
+
+
+6.在开始菜单找到，Powershell并使用管理员运行，输入net start sshd开启SSH服务，如需关闭输入net stop sshd。
+
+
+
+
+
+7.在Anaconda Prompt中输入ipython，然后输入Jupyter Notebook开启服务。
+
+
+
+
+8.打开同一网络环境下的其他设备的命令行，输入以下命令（将用户名替换为服务器登录的用户名，  IP地址替换为服务器的IP地址），根据提示输入密码完成SSH连接。
+
+ssh ‘用户名’@‘IP地址’    
+
+
+
+
+9.打开同一网络环境下的其他设备的浏览器，输入服务器的IP地址和端口号，按照提示输入设置的密码，就可使用服务器上的Jupyter Notebook。
+
+ 作者：tm9161 https://www.bilibili.com/read/cv9010361 出处：bilibili
