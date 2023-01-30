@@ -5,24 +5,22 @@ Ref [ipympl github](https://github.com/matplotlib/ipympl)
 Ref [matplotlib interaction tutorial](https://matplotlib.org/stable/tutorials/index.html) 
  
 Open powershell in Windows
-1. define alias: "new-alias grep findstr", "grep" means "findstr" in fellowing cmd.  
+1. In base env, we update nodejs by "conda install -c conda-forge nodejs".
+    nodejs version should be greater than 16 when you check with "conda list | findstr nodejs"  
  
-2. In base env, we update nodejs by "conda install -c conda-forge nodejs".
-    nodejs version should be greater than 16 when you check with "conda list | grep nodejs"  
+2. Activate env "pycyto", "conda activate pycyto".  
  
-3. Activate env "pycyto", "conda activate pycyto".  
+3. We confirm matplotlib version 3.6.2. otherwise "conda install -c conda-forge matplotlib==3.6.2 nodejs" 
  
-4. We confirm matplotlib version 3.6.2. otherwise "conda install -c conda-forge matplotlib==3.6.2 nodejs" 
+4. Install jupyter again, "conda install jupyterlab ipympl ipywidgets"  
  
-5. Install jupyter again, "conda install jupyterlab ipympl ipywidgets"  
- 
-6. install Jupyter extension, "jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib" 
+5. install Jupyter extension, "jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib" 
 
-7. In case of error when import scanpy, run-install numba and scanpy 
+6. In case of error when import scanpy, run-install numba and scanpy 
     + update numba, "pip install --upgrade numba" 
     + install scanpy, "pip install scanpy" 
  
-8. Create multi-kernel for jupyter, optional.
+7. Create multi-kernel for jupyter, optional.
     + pip install ipykernel
     + python -m ipykernel install --user --name=pycyto
     + conda install Jupyter
