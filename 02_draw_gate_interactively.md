@@ -30,26 +30,27 @@ Open powershell in Windows
  
 ## Now, magic %matplotlib should work  
 *****************  
-%matplotlib ipympl 
-  
+```
+%matplotlib ipympl   
+   
 import matplotlib.pyplot as plt 
  
-def draw_polygon(points): 
-    x = [point[0] for point in points] 
-    y = [point[1] for point in points] 
-    plt.plot(x, y, 'o-') 
-    plt.show() 
- 
-points = [] 
- 
-def onclick(event): 
-    global points 
-    points.append((event.xdata, event.ydata)) 
-    if len(points) > 1: 
-        draw_polygon(points) 
- 
-fig, ax = plt.subplots() 
-fig.canvas.mpl_connect('button_press_event', onclick) 
-plt.show() 
- 
+def draw_polygon(points):  
+    x = [point[0] for point in points]  
+    y = [point[1] for point in points]   
+    plt.plot(x, y, 'o-')   
+    plt.show()   
+   
+points = []   
+  
+def onclick(event):  
+    global points  
+    points.append((event.xdata, event.ydata))  
+    if len(points) > 1:  
+        draw_polygon(points)  
+   
+fig, ax = plt.subplots()  
+fig.canvas.mpl_connect('button_press_event', onclick)  
+plt.show()  
+```
 ******** 
