@@ -54,3 +54,20 @@ fig.canvas.mpl_connect('button_press_event', onclick)
 plt.show()  
 ```
 ******** 
+
+
+# Solution 2 
+using **plotly** lib
+1. Install plotly in env  
+   + conda activate base  # activate base env
+   + conda install "jupyterlab>=3" "ipywidgets>=7.6" plotly jupyter-dash
+   after installation, plotly should work under base env
+3. Configure jupyterlab in specific env
+   + conda activate my_env
+   + conda install "jupyterlab>=3" "ipywidgets>=7.6" plotly jupyter-dash
+5. Test
+   ```
+   import plotly.express as px
+   fig = px.bar(x=["a", "b", "c"], y=[1, 3, 2])
+   fig.show()
+   ```
