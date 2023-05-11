@@ -1,6 +1,6 @@
 1. step 1 _ install anaconda or miniconda 
-	+ download latest anaconda fro your system from https://repo.anaconda.com/archive  
-	+ in windows we choose anaconda3-2022.10-Windows-x86_64.exe, then install it by double click icon.  
+	+ download latest anaconda for your system from https://repo.anaconda.com/archive  
+	+ we choose anaconda3-2022.10-Windows-x86_64.exe, then install it by double click icon.  
 	+ you might have to run "conda init" for initiation accordinglly after installation.  
 	
 2. step 2 _ create conda environment with a name you like, for example **pycyto** 
@@ -30,3 +30,6 @@
  	+ run **conda activate pycyto**, if you start from **Anaconda Prompt (anaconda3)**
  	+ run **jupyter lab**, waiting for commands open your default explorer like Chrome, then load jupyterlab.
  	+ Strat working ... 
+6. Alternative step: env transfer
+	+ create packages list with "conda list --explicit > spec-list.txt", which will create a txt file named with spec-list in your current working directory
+	+ in new PC, run "conda create --name new_env --file spec-list.txt"
